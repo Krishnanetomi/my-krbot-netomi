@@ -1,59 +1,8 @@
-  <script>
+<script>
   (function() {
     var ns = document.createElement('script');
     ns.src = ('https://chatapps-qa.netomi.com/app/script.js');ns.type = 'text/javascript'; ns.async = true;
     ns.setAttribute('botRefId', '7fa0f730-31dc-46f6-a510-193f5619ca75');
     var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ns, s);
-    ns.onload = function () {window.Netomi.chat.changeBotConfig({
-            "form": {
-              "back": {
-                "color": "#000000",
-                "fontSize": "14px",
-                "fontFamily": "Arial, sans-serif",
-                "backgroundColor": "#F0F0F0",
-                "borderRadius": "4px",
-                "border": "1px solid #CCCCCC",
-                "padding": "8px 12px",
-                "boxShadow": "0 1px 3px rgba(0,0,0,0.1)",
-                "hoverColor": "#ffffff",
-                "hoverBackgroundColor": "#333333"
-              },
-              "restart": {
-                "color": "#000000",
-                "fontSize": "14px",
-                "fontFamily": "Arial, sans-serif",
-                "backgroundColor": "#F0F0F0",
-                "borderRadius": "4px",
-                "border": "1px solid #CCCCCC",
-                "padding": "8px 12px",
-                "boxShadow": "0 1px 3px rgba(0,0,0,0.1)",
-                "hoverColor": "#ffffff",
-                "hoverBackgroundColor": "#333333"
-              },
-              "skip": {
-                "color": "#000000",
-                "fontSize": "14px",
-                "fontFamily": "Arial, sans-serif",
-                "backgroundColor": "#F0F0F0",
-                "borderRadius": "4px",
-                "border": "1px solid #CCCCCC",
-                "padding": "8px 12px",
-                "boxShadow": "0 1px 3px rgba(0,0,0,0.1)",
-                "hoverColor": "#ffffff",
-                "hoverBackgroundColor": "#FFA500"
-              },
-              "submit": {
-                "color": "#000000",
-                "fontSize": "14px",
-                "fontFamily": "Arial, sans-serif",
-                "backgroundColor": "#F0F0F0",
-                "borderRadius": "4px",
-                "border": "1px solid #CCCCCC",
-                "padding": "8px 12px",
-                "boxShadow": "0 1px 3px rgba(0,0,0,0.1)",
-                "hoverColor": "#ffffff",
-                "hoverBackgroundColor": "#FFA500"
-              }
-            }
-          });
+    ns.onload = function () {window.Netomi.chat.init(() => {/* add publish events here */})}})();
 </script>
